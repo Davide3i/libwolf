@@ -1,0 +1,16 @@
+Determining if the include file vfork.h exists failed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2050793449/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2050793449.dir/build.make CMakeFiles/cmTryCompileExec2050793449.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2050793449.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec2050793449.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:19: fatal error: vfork.h: File o directory non esistente
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2050793449.dir/CheckIncludeFile.c.o] Errore 1
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+make: *** [cmTryCompileExec2050793449/fast] Errore 2
+
+

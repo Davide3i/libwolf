@@ -1,0 +1,701 @@
+The system is: Linux - 3.8.0-26-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/2.8.10.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/2.8.10.1/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3820805157/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3820805157.dir/build.make CMakeFiles/cmTryCompileExec3820805157.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3820805157.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3820805157.dir/testCCompiler.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec3820805157
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3820805157.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec3820805157.dir/testCCompiler.c.o  -o cmTryCompileExec3820805157 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1612854554/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1612854554.dir/build.make CMakeFiles/cmTryCompileExec1612854554.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1612854554.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1612854554.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1612854554
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1612854554.dir/link.txt --verbose=1
+/usr/bin/cc       -v CMakeFiles/cmTryCompileExec1612854554.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1612854554 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1612854554' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1612854554 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec1612854554.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1612854554/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1612854554.dir/build.make CMakeFiles/cmTryCompileExec1612854554.dir/build]
+  ignore line: [make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1612854554.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1612854554.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1612854554]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1612854554.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc       -v CMakeFiles/cmTryCompileExec1612854554.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1612854554 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1612854554' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1612854554 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec1612854554.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1612854554] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..]
+    arg [CMakeFiles/cmTryCompileExec1612854554.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.7]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> [/usr/lib]
+  collapse dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse dir [/lib/../lib] ==> [/lib]
+  collapse dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1012641110/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1012641110.dir/build.make CMakeFiles/cmTryCompileExec1012641110.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1012641110.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1012641110.dir/testCXXCompiler.cxx.o -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1012641110
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1012641110.dir/link.txt --verbose=1
+/usr/bin/c++          CMakeFiles/cmTryCompileExec1012641110.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1012641110 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3384669181/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3384669181.dir/build.make CMakeFiles/cmTryCompileExec3384669181.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3384669181.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3384669181.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3384669181
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3384669181.dir/link.txt --verbose=1
+/usr/bin/c++        -v CMakeFiles/cmTryCompileExec3384669181.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3384669181 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3384669181' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3384669181 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec3384669181.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3384669181/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3384669181.dir/build.make CMakeFiles/cmTryCompileExec3384669181.dir/build]
+  ignore line: [make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3384669181.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3384669181.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3384669181]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3384669181.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++        -v CMakeFiles/cmTryCompileExec3384669181.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3384669181 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3384669181' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3384669181 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec3384669181.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3384669181] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..]
+    arg [CMakeFiles/cmTryCompileExec3384669181.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.7]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> [/usr/lib]
+  collapse dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse dir [/lib/../lib] ==> [/lib]
+  collapse dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+
+
+Performing C SOURCE FILE Test HAVE_inline succeded with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3979459340/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3979459340.dir/build.make CMakeFiles/cmTryCompileExec3979459340.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3979459340.dir/src.c.o
+/usr/bin/cc  -DKEYWORD=inline -DHAVE_inline   -o CMakeFiles/cmTryCompileExec3979459340.dir/src.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3979459340
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3979459340.dir/link.txt --verbose=1
+/usr/bin/cc     -DHAVE_inline    CMakeFiles/cmTryCompileExec3979459340.dir/src.c.o  -o cmTryCompileExec3979459340 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+Source file was:
+
+		#include <stdio.h>
+		KEYWORD void a() {}
+		int main(int argc, char **argv) { a(); return 0; }
+		
+Performing C SOURCE FILE Test HAVE___inline__ succeded with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1685067353/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1685067353.dir/build.make CMakeFiles/cmTryCompileExec1685067353.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1685067353.dir/src.c.o
+/usr/bin/cc  -DKEYWORD=__inline__ -DHAVE___inline__   -o CMakeFiles/cmTryCompileExec1685067353.dir/src.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1685067353
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1685067353.dir/link.txt --verbose=1
+/usr/bin/cc     -DHAVE___inline__    CMakeFiles/cmTryCompileExec1685067353.dir/src.c.o  -o cmTryCompileExec1685067353 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+Source file was:
+
+		#include <stdio.h>
+		KEYWORD void a() {}
+		int main(int argc, char **argv) { a(); return 0; }
+		
+Performing C SOURCE FILE Test HAVE___inline succeded with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3466946316/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3466946316.dir/build.make CMakeFiles/cmTryCompileExec3466946316.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3466946316.dir/src.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DHAVE___inline   -o CMakeFiles/cmTryCompileExec3466946316.dir/src.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3466946316
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3466946316.dir/link.txt --verbose=1
+/usr/bin/cc     -DHAVE___inline    CMakeFiles/cmTryCompileExec3466946316.dir/src.c.o  -o cmTryCompileExec3466946316 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+Source file was:
+
+		#include <stdio.h>
+		KEYWORD void a() {}
+		int main(int argc, char **argv) { a(); return 0; }
+		
+Determining if the function bzero exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3939294532/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3939294532.dir/build.make CMakeFiles/cmTryCompileExec3939294532.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3939294532.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DCHECK_FUNCTION_EXISTS=bzero   -o CMakeFiles/cmTryCompileExec3939294532.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘bzero’ [enabled by default]
+Linking C executable cmTryCompileExec3939294532
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3939294532.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=bzero    CMakeFiles/cmTryCompileExec3939294532.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3939294532 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the function fork exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2270770572/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2270770572.dir/build.make CMakeFiles/cmTryCompileExec2270770572.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2270770572.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DCHECK_FUNCTION_EXISTS=fork   -o CMakeFiles/cmTryCompileExec2270770572.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘fork’ [enabled by default]
+Linking C executable cmTryCompileExec2270770572
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2270770572.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=fork    CMakeFiles/cmTryCompileExec2270770572.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2270770572 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the function malloc exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2602574442/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2602574442.dir/build.make CMakeFiles/cmTryCompileExec2602574442.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2602574442.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DCHECK_FUNCTION_EXISTS=malloc   -o CMakeFiles/cmTryCompileExec2602574442.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘malloc’ [enabled by default]
+Linking C executable cmTryCompileExec2602574442
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2602574442.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=malloc    CMakeFiles/cmTryCompileExec2602574442.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2602574442 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec895670964/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec895670964.dir/build.make CMakeFiles/cmTryCompileExec895670964.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec895670964.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DCHECK_FUNCTION_EXISTS=memset   -o CMakeFiles/cmTryCompileExec895670964.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘memset’ [enabled by default]
+Linking C executable cmTryCompileExec895670964
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec895670964.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=memset    CMakeFiles/cmTryCompileExec895670964.dir/CheckFunctionExists.c.o  -o cmTryCompileExec895670964 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the function realloc exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3373877150/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3373877150.dir/build.make CMakeFiles/cmTryCompileExec3373877150.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3373877150.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DCHECK_FUNCTION_EXISTS=realloc   -o CMakeFiles/cmTryCompileExec3373877150.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘realloc’ [enabled by default]
+Linking C executable cmTryCompileExec3373877150
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3373877150.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=realloc    CMakeFiles/cmTryCompileExec3373877150.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3373877150 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the function socket exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec138074885/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec138074885.dir/build.make CMakeFiles/cmTryCompileExec138074885.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec138074885.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DCHECK_FUNCTION_EXISTS=socket   -o CMakeFiles/cmTryCompileExec138074885.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec138074885
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec138074885.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=socket    CMakeFiles/cmTryCompileExec138074885.dir/CheckFunctionExists.c.o  -o cmTryCompileExec138074885 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the function strerror exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec320401298/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec320401298.dir/build.make CMakeFiles/cmTryCompileExec320401298.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec320401298.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DCHECK_FUNCTION_EXISTS=strerror   -o CMakeFiles/cmTryCompileExec320401298.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec320401298
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec320401298.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=strerror    CMakeFiles/cmTryCompileExec320401298.dir/CheckFunctionExists.c.o  -o cmTryCompileExec320401298 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the function vfork exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1721781858/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1721781858.dir/build.make CMakeFiles/cmTryCompileExec1721781858.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1721781858.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DCHECK_FUNCTION_EXISTS=vfork   -o CMakeFiles/cmTryCompileExec1721781858.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1721781858
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1721781858.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=vfork    CMakeFiles/cmTryCompileExec1721781858.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1721781858 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the function getifaddrs exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec387121096/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec387121096.dir/build.make CMakeFiles/cmTryCompileExec387121096.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec387121096.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -DKEYWORD=__inline -DCHECK_FUNCTION_EXISTS=getifaddrs   -o CMakeFiles/cmTryCompileExec387121096.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec387121096
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec387121096.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=getifaddrs    CMakeFiles/cmTryCompileExec387121096.dir/CheckFunctionExists.c.o  -o cmTryCompileExec387121096 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec714288607/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec714288607.dir/build.make CMakeFiles/cmTryCompileExec714288607.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec714288607.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec714288607.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec714288607
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec714288607.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec714288607.dir/CheckIncludeFile.c.o  -o cmTryCompileExec714288607 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3144634007/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3144634007.dir/build.make CMakeFiles/cmTryCompileExec3144634007.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3144634007.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec3144634007.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3144634007
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3144634007.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec3144634007.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3144634007 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1500048124/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1500048124.dir/build.make CMakeFiles/cmTryCompileExec1500048124.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1500048124.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec1500048124.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1500048124
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1500048124.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec1500048124.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1500048124 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3920215862/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3920215862.dir/build.make CMakeFiles/cmTryCompileExec3920215862.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3920215862.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec3920215862.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3920215862
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3920215862.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec3920215862.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3920215862 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file netinet/in.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec795179810/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec795179810.dir/build.make CMakeFiles/cmTryCompileExec795179810.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec795179810.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec795179810.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec795179810
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec795179810.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec795179810.dir/CheckIncludeFile.c.o  -o cmTryCompileExec795179810 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3182216652/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3182216652.dir/build.make CMakeFiles/cmTryCompileExec3182216652.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3182216652.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec3182216652.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3182216652
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3182216652.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec3182216652.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3182216652 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec525060819/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec525060819.dir/build.make CMakeFiles/cmTryCompileExec525060819.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec525060819.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec525060819.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec525060819
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec525060819.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec525060819.dir/CheckIncludeFile.c.o  -o cmTryCompileExec525060819 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec30907744/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec30907744.dir/build.make CMakeFiles/cmTryCompileExec30907744.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec30907744.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec30907744.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec30907744
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec30907744.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec30907744.dir/CheckIncludeFile.c.o  -o cmTryCompileExec30907744 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1817335514/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1817335514.dir/build.make CMakeFiles/cmTryCompileExec1817335514.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1817335514.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec1817335514.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1817335514
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1817335514.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec1817335514.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1817335514 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file sys/prctl.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4111234654/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4111234654.dir/build.make CMakeFiles/cmTryCompileExec4111234654.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4111234654.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec4111234654.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4111234654
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4111234654.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec4111234654.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4111234654 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file sys/socket.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2236714116/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2236714116.dir/build.make CMakeFiles/cmTryCompileExec2236714116.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2236714116.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec2236714116.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2236714116
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2236714116.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec2236714116.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2236714116 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec550703677/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec550703677.dir/build.make CMakeFiles/cmTryCompileExec550703677.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec550703677.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec550703677.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec550703677
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec550703677.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec550703677.dir/CheckIncludeFile.c.o  -o cmTryCompileExec550703677 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3150705418/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3150705418.dir/build.make CMakeFiles/cmTryCompileExec3150705418.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3150705418.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec3150705418.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3150705418
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3150705418.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec3150705418.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3150705418 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2470075936/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2470075936.dir/build.make CMakeFiles/cmTryCompileExec2470075936.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2470075936.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec2470075936.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2470075936
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2470075936.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec2470075936.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2470075936 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if the include file zlib.h exists passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2685190239/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2685190239.dir/build.make CMakeFiles/cmTryCompileExec2685190239.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2685190239.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec2685190239.dir/CheckIncludeFile.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2685190239
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2685190239.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec2685190239.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2685190239 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+
+Determining if files stdlib.h;stdarg.h;string.h;float.h exist passed with the following output:
+Change Dir: /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3939243895/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3939243895.dir/build.make CMakeFiles/cmTryCompileExec3939243895.dir/build
+make[1]: ingresso nella directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+/usr/bin/cmake -E cmake_progress_report /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3939243895.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -DKEYWORD=__inline  -o CMakeFiles/cmTryCompileExec3939243895.dir/CheckIncludeFiles.c.o   -c /home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3939243895
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3939243895.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec3939243895.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3939243895 -rdynamic 
+make[1]: uscita dalla directory "/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/CMakeTmp"
+
+

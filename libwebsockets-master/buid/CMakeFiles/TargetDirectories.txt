@@ -1,0 +1,9 @@
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/dist.dir
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/test-client.dir
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/test-echo.dir
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/test-fraggle.dir
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/test-ping.dir
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/test-server.dir
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/test-server-extpoll.dir
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/websockets.dir
+/home/fabio/Scrivania/libwebsockets-master/buid/CMakeFiles/websockets_shared.dir

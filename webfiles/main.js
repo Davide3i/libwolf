@@ -23,7 +23,7 @@ function drawTable() {
 	data.addColumn('number', 'Identifier');
 	data.addColumn('string', 'Name');
 	data.addColumn('string', 'Description');
-        data.addColumn('number', 'Type');
+        data.addColumn('string', 'Type');
 	data.addColumn('string', 'Value');
 	data.addColumn('number', 'Timestamp Seconds');
 	data.addColumn('number', 'Timestamp microSeconds');
@@ -35,6 +35,6 @@ function drawTable() {
 
 
 function addRow(p) {
-	data.addRow([p.id, p.name, p.description,p.type, p.value.toString(), p.secTimestamp, p.uSecTimestamp]);
+	data.addRow([p.id, p.name, p.description,p.getValueTypeString(), p.value.toString(), p.secTimestamp, p.uSecTimestamp]);
 	table.draw(data, {showRowNumber: false});
 }

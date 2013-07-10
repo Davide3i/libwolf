@@ -8,6 +8,7 @@ void int_to_byte(char *buffer, uint32_t integer);
 uint32_t byte_to_int(char *buffer);
 void time_to_byte(struct timeval tv, char *buffer);
 char *extension_to_mime_type(char *extension);
+int getIdFromIdString(char* str);
 
 typedef struct ext_to_mimetype_entry {
 
@@ -16,6 +17,12 @@ typedef struct ext_to_mimetype_entry {
 
 } ext_to_mimetype_entry_t;
 
+int getIdFromIdString(char* str){
+    char strcopy[12];
+        strcpy(strcopy,str);
+
+    return atoi(strtok(strcopy,"e"));
+}
 
 void int_to_byte(char *buffer, uint32_t integer) {
 

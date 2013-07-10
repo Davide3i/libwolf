@@ -1,5 +1,7 @@
 var ws;
 
+// ------< API FUNCTIONS >------
+
 function property(name, description, id, type, value, secTimestamp, uSecTimestamp){
 
 	this.name = name;
@@ -18,9 +20,38 @@ function property(name, description, id, type, value, secTimestamp, uSecTimestam
                    " value: " + this.value +
                    " Timestamp: " + this.secTimestamp +"."+this.uSecTimestamp;
         };
+        
+        this.getValueTypeString =function(){
+            switch(this.type){
+               case 1: return "Integer";
+
+               case 2: return "Float";
+
+               case 3: return "String";
+            
+               case 4: return "Double";
+                        
+               default: return "UnknownType";
+        
+            }
+        };
 }
 
 function initConnection(){
+    
+     //add  a new usefull method to DataView objects for extracting string
+     DataView.prototype.getString=function(offset,length){
+        var str="";
+           
+        for(var i=0;i<length;i++){
+            var charByte = dv.getUint8(offset);
+            str += String.fromCharCode(charByte);
+            offset++;
+        }
+           
+        return str;
+    };
+    
     
     if (typeof MozWebSocket !== "undefined") {
 	ws = new MozWebSocket(get_appropriate_ws_url(),"property-protocol");
@@ -43,6 +74,19 @@ function initConnection(){
 	}
 }
 
+function getProperty(id){
+    messageGetQueryEncoder(id);
+}
+
+function getAllProperty(){
+    messageGetQueryEncoder(0);
+}
+
+
+
+
+// ------< AUXILIARY FUNCTIONS >------
+
 function get_appropriate_ws_url() {
 	var u = document.URL;
 	u = u.substr(7);
@@ -50,28 +94,16 @@ function get_appropriate_ws_url() {
 	return "ws://" + u[0]; 	//example:  ws://127.0.0.1:7681
 }
 
-function getProperty(id){
-    messageGetQueryEncoder(id);
-}
 
 function messageGetQueryEncoder(id) {
-/*
-    var message = new ArrayBuffer(5);
-    dv = new DataView(message);
-        
-    dv.setInt8(0,1);
-    dv.setInt32(1,id);
-        
-    message.dv.getString(,,);
-        
-    return message;
-*/
-    send("ciao"); //TODO !!!
+    var stringMessage=""+id+"e";
+    send(stringMessage);
 }
 
 function send(mesg){
-	ws.send(mesg);
+    ws.send(mesg);
 }
+
 
 //param message type: ArrayBuffuer
 //return type: property
@@ -80,19 +112,6 @@ function messageGetUpdateDecoder(message){
        
 	var offset=1;
         
-        //add  a new usefull method to DataView objects for extracting string
-        DataView.prototype.getString=function(offset,length){
-            var str="";
-            
-            for(var i=0;i<length;i++){
-                var charByte = dv.getUint8(offset);
-                str += String.fromCharCode(charByte);
-                offset++;
-            }
-           
-            return str;
-        };
-
         dv = new DataView(message);
       
 	id = dv.getUint32(offset);
@@ -121,8 +140,14 @@ function messageGetUpdateDecoder(message){
                     offset++;
                     value = dv.getString(offset,stringLength);
                     offset+=stringLength;
+                    break;
                         
-            default: break;
+            case 4: value = dv.getFloat64(offset);
+                    offset +=8;
+                    break;
+                        
+            default:value ="UnknownType";
+                    break;
 	}
        
 	var descriptionLength = dv.getUint8(offset);

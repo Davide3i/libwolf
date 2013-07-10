@@ -1,29 +1,36 @@
-all:	wolf.c converter.c 
+CC=gcc
+CFLAGS=-c
+SOURCES=wolf.c converter.c
+RM=rm -f
+
+
+all: $(SOURCES)
 	#
 	# --- --- Compiling the WOLF library --- ---
 	#
-	gcc -c wolf.c -o wolf.o -L. -lpthread -I.
-	gcc -c converter.c -o converter.o
+	$(CC) $(CFLAGS) wolf.c -o wolf.o -L. -lpthread -I.
+	$(CC) $(CFLAGS) converter.c -o converter.o
 	ar rcs libwolf.a *.o
 
 test: libwolf.a test.c
 	#
 	# --- --- Compiling an example-test programm --- ---
 	#
-	rm -f test.bin	
-	gcc -c -o test.o -I./ test.c
-	gcc -o test.bin -L./ -lwolf -lwebsockets
-	rm -f test.o
+	$(RM) test.bin	
+	$(CC) $(CFLAGS) -o test.o -I./ test.c
+	$(CC) test.o -o test.bin -L./ -lwolf -lwebsockets -lpthread
+	$(RM) test.o
 
 clean:
 	#
 	# --- --- Cleaning up --- ---
 	#
-	rm -f libwolf.a
-	rm -f test.bin
-	rm -f *.o
+	$(RM) libwolf.a
+	$(RM) test.bin
+	$(RM) *.o
 
 install:
 	#
-	# WARNING: not yet implemented feature 
+	# --- --- install (only dipendence) --- ---
 	#
+	sudo cp libwebsockets.so.4.0.0 /usr/lib

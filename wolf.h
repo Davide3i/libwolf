@@ -4,18 +4,23 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdint.h>
+#include <pthread.h>
 
 #include "libwebsockets.h"
 
-#define PROTOCOL_NAME "oneproperty-protocol"
+#define PROTOCOL_NAME "property-protocol"
+#define MAX_NAME_LENGTH 100
+#define MAX_STRING_LENGTH 100
+#define MAX_DESC_LENGTH 100
 
-enum enum_type {Int, Float, String};
+enum enum_type {Int, Float, String, Double};
 
 typedef union {
     int Int;
     float Float;
     char* String;
-    char byte[4];
+    double Double;
+    char byte[8];
 } value_t;
 
 typedef struct property {
@@ -43,33 +48,16 @@ typedef struct server_state
 
 } server_state_t;
 
+
 //################ Function prototypes ################
 
 //public API
 int wolf_init(int port, char *web_path);
-int register_property(property_t p);
-int register_properties(property_t p[]);
 int wolf_start();
+int wolf_run();
 void wolf_close();
-
-property_list_node_t *search_by_id(uint32_t id);
-int get_property(uint32_t id, property_t *p);
-value_t get_value(property_list_node_t *node);
-
-int server_initialize(int port);
-static int callback_http(struct libwebsocket_context *context, struct libwebsocket *wsi, enum libwebsocket_callback_reasons reason, void *user, void *in, size_t len); //manage the http protocol
-static int callback_oneproperty(struct libwebsocket_context *context, struct libwebsocket *wsi,	enum libwebsocket_callback_reasons reason, void *user, void *in, size_t len);//manage the oneproperty protocol
-void server(struct libwebsocket_context *context);
-int sendMessage(struct libwebsocket *wsi, unsigned char *message, size_t lenght);
-
-void get_Query_Decoder(struct libwebsocket *wsi, char *in, size_t len);
-void message_get_update_encoder(property_t p, struct libwebsocket *wsi);
-
-void get_dispatcher(uint32_t id, struct libwebsocket *wsi);
-
-int insert(property_list_node_t **ptail, property_t p);
-property_list_node_t* search_id(uint32_t id, property_list_node_t *ptail);
-void free_property_list(property_list_node_t *tail);
+int register_property(property_t p);
+int register_properties(property_t p[],int lenght);
 
 
 

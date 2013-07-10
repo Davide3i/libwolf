@@ -4,24 +4,37 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdint.h>
+#include <pthread.h>
 
 #include "libwebsockets.h"
 
 #define PROTOCOL_NAME "property-protocol"
-#define MAX_NAME_LENGTH 100
-#define MAX_STRING_LENGTH 100
-#define MAX_DESC_LENGTH 100
 
-enum enum_type {Int, Float, String};
+#define MAX_MESSAGE_LENGHT 512
 
-typedef union {
+#define MAX_NAME_LENGHT 100
+#define MAX_STRING_LENGHT 100
+#define MAX_DESC_LENGHT 250
+
+#define MAX_PATH_LENGHT 1500
+#define MAX_FOLDER_PATH_LENGHT 1000
+#define MAX_FILENAME_LENGHT 500
+
+
+
+enum enum_type {Int, Float, String, Double};
+
+typedef union
+{
     int Int;
     float Float;
     char* String;
-    char byte[4];
+    double Double;
+    char byte[8];
 } value_t;
 
-typedef struct property {
+typedef struct property
+{
     char* name;
     char* description;
     uint32_t id;
@@ -31,7 +44,8 @@ typedef struct property {
     value_t (*callback)();
 } property_t;
 
-typedef struct property_list_node {
+typedef struct property_list_node
+{
     property_t pr;
     struct property_list_node *p_prev;
     struct property_list_node *p_next;
@@ -49,6 +63,15 @@ typedef struct server_state
 
 //################ Function prototypes ################
 
+//public API
+int wolf_init(int port, char *web_path);
+int wolf_start();
+int wolf_run();
+void wolf_close();
+int register_property(property_t p);
+int register_properties(property_t p[],int lenght);
+
+
 property_list_node_t *search_by_id(uint32_t id);
 int get_property(uint32_t id, property_t *p);
 value_t get_value(property_list_node_t *node);
@@ -64,15 +87,6 @@ void message_get_update_encoder(property_t p, struct libwebsocket *wsi);
 
 void get_dispatcher(uint32_t id, struct libwebsocket *wsi);
 
-//public API
-int wolf_init(int port, char *web_path);
-int register_property(property_t p);
-int register_properties(property_t p[]);
-int wolf_start();
-void wolf_close();
-
-
-void init();
 
 //Aux function for property list management
 int insert(property_list_node_t **ptail, property_t p);
@@ -80,20 +94,10 @@ property_list_node_t* search_id(uint32_t id, property_list_node_t *ptail);
 void free_property_list(property_list_node_t *tail);
 
 
-
-
-
 //################ Global variables ################
 
 server_state_t state;
-
 int wolf_server_stop;
-
-void init(){
-    state.first_free_id = 1;
-    state.property_list_tail = NULL;
-}
-
 
 
 static struct libwebsocket_protocols protocols[] =   //list of allowed protocols
@@ -129,15 +133,13 @@ int register_property(property_t p)
     return insert(&(state.property_list_tail), p);
 }
 
-int register_properties(property_t p[])
+int register_properties(property_t p[],int lenght)
 {
-
     int i;
-    for (i = 0; p[i].name != NULL; i++)   //TODO qualcosa di più safe del nome a null!
+    for (i = 0; i<=lenght != NULL; i++)
     {
         register_property(p[i]);
     }
-
 }
 
 property_list_node_t* search_by_id(uint32_t id)
@@ -211,6 +213,14 @@ int wolf_start()
 
 }
 
+int wolf_run()
+{
+    pthread_t serverthread;
+
+    if(pthread_create(&serverthread,NULL,wolf_start(),NULL))
+        return -1;
+}
+
 void wolf_close()
 {
 
@@ -262,7 +272,7 @@ int sendMessage(struct libwebsocket *wsi, unsigned char *message,size_t lenght) 
 {
 
     int byte_sended;
-    unsigned char buffer[LWS_SEND_BUFFER_PRE_PADDING + 512 + LWS_SEND_BUFFER_POST_PADDING]; // NOTICE: MESSAGE PAYLOAD 512 BYTE
+    unsigned char buffer[LWS_SEND_BUFFER_PRE_PADDING + MAX_MESSAGE_LENGHT + LWS_SEND_BUFFER_POST_PADDING]; // NOTICE: MESSAGE PAYLOAD 512 BYTE
     unsigned char *start_message_pointer = &buffer[LWS_SEND_BUFFER_PRE_PADDING];
 
     memcpy(start_message_pointer, message, lenght);
@@ -281,19 +291,18 @@ int sendMessage(struct libwebsocket *wsi, unsigned char *message,size_t lenght) 
 static int callback_http(struct libwebsocket_context *context, struct libwebsocket *wsi, enum libwebsocket_callback_reasons reason, void *user, void *in, size_t len)
 {
     char *path;
-    //TODO dinamico
-    char fullpath[200]="";
-    char folder[200]="webfiles";
-    char pathcopy[200]="";
-    char* extension;
 
+    char fullpath[MAX_PATH_LENGHT]="";
+    char folder[MAX_FOLDER_PATH_LENGHT]="webfiles";
+    char pathcopy[MAX_FILENAME_LENGHT]="";
+    char* extension;
 
     switch (reason)
     {
 
     case LWS_CALLBACK_HTTP:
 
-        // For security reasons block all requests for ../filename //TODO TEST
+        // For security reasons block all requests for ../filename TESTED OK
         path = (char*)in;
         if ((char)(path[0]) == '.')
         {
@@ -331,7 +340,7 @@ static int callback_http(struct libwebsocket_context *context, struct libwebsock
 
 static int callback_property_protocol(struct libwebsocket_context *context, struct libwebsocket *wsi,	enum libwebsocket_callback_reasons reason, void *user, void *in, size_t len)
 {
-
+    int id=0;//fallback send all
     char *message;
 
     switch (reason)
@@ -339,10 +348,10 @@ static int callback_property_protocol(struct libwebsocket_context *context, stru
 
     case LWS_CALLBACK_RECEIVE:
         message = (char*)in;
-        //TODO remove
-        lwsl_notice("Received query");
-        //TODO sostitire con  get_Query_Decoder(wsi, message, len); quando funzionerà bene
-        get_dispatcher(0, wsi);
+
+        id=getIdFromIdString(message);
+
+        get_dispatcher(id, wsi);
         break;
 
     }
@@ -366,9 +375,7 @@ void get_Query_Decoder(struct libwebsocket *wsi, char *in, size_t len)
 
 void message_get_update_encoder(property_t p,struct libwebsocket *wsi)
 {
-
-    //TODO definire un massimo
-    char buffer[400];
+    char buffer[MAX_MESSAGE_LENGHT];
 
     int offset;
     int i;
@@ -380,11 +387,13 @@ void message_get_update_encoder(property_t p,struct libwebsocket *wsi)
     int_to_byte(buffer + 1, p.id);
 
     i = strlen(p.name)+1; // 1 more for terminator character
-    //TODO if(i>MAXNAMELENGHT) return -
+
+    if(i>MAX_NAME_LENGHT)
+        i=MAX_NAME_LENGHT;
+
     buffer[5] = (char)i; // Name Lenght
 
-    //TODO snprintf
-    snprintf(buffer + 6,MAX_NAME_LENGTH, "%s", p.name); // Name
+    snprintf(buffer + 6,MAX_NAME_LENGHT, "%s", p.name); // Name
     offset = i + 6;
 
     switch(p.type)   // Value Type, 1 byte + Value
@@ -401,11 +410,11 @@ void message_get_update_encoder(property_t p,struct libwebsocket *wsi)
     case Float:
         //Type
         buffer[offset++] = 2;
-        //Value //TODO test
-        buffer[offset++] = p.value.byte[0];
-        buffer[offset++] = p.value.byte[1];
-        buffer[offset++] = p.value.byte[2];
+        //Value
         buffer[offset++] = p.value.byte[3];
+        buffer[offset++] = p.value.byte[2];
+        buffer[offset++] = p.value.byte[1];
+        buffer[offset++] = p.value.byte[0];
         break;
 
     case String:
@@ -414,19 +423,37 @@ void message_get_update_encoder(property_t p,struct libwebsocket *wsi)
 
         //String length
         i=strlen(p.value.String)+1; // 1 more for terminator character
+        if(i>MAX_STRING_LENGHT)
+            i=MAX_STRING_LENGHT;
+
         buffer[offset++] = i;
 
         //Value
-        snprintf(buffer + offset,MAX_STRING_LENGTH, "%s", p.value.String);
+        snprintf(buffer + offset,MAX_STRING_LENGHT, "%s", p.value.String);
         offset+=i;
 
         break;
+
+    case Double:
+        //Type
+        buffer[offset++] = 4;
+        //Value
+        buffer[offset++] = p.value.byte[7];
+        buffer[offset++] = p.value.byte[6];
+        buffer[offset++] = p.value.byte[5];
+        buffer[offset++] = p.value.byte[4];
+        buffer[offset++] = p.value.byte[3];
+        buffer[offset++] = p.value.byte[2];
+        buffer[offset++] = p.value.byte[1];
+        buffer[offset++] = p.value.byte[0];
     }
 
     i = strlen(p.description)+1; // 1 more for terminator character
+    if(i>MAX_DESC_LENGHT)
+        i=MAX_DESC_LENGHT;
     buffer[offset++] = i; // Description Lenght
 
-    snprintf(buffer + offset,MAX_DESC_LENGTH, "%s", p.description); // Description //TODO snprintf
+    snprintf(buffer + offset,MAX_DESC_LENGHT, "%s", p.description); // Description
     offset += i;
 
     time_to_byte(p.timestamp, buffer + offset); // SecTimestamp, 4 byte + uSecTimestamp, 4 byte
@@ -442,10 +469,13 @@ void get_dispatcher(uint32_t id,struct libwebsocket *wsi)
 {
     int i;
 
-    if(id==0){
-        for(i=1;i<state.first_free_id;i++)
+    if(id==0)
+    {
+        for(i=1; i<state.first_free_id; i++)
             get_dispatcher(i,wsi);
-    }else{
+    }
+    else
+    {
         property_t p;
         get_property(id,&p);
         message_get_update_encoder(p,wsi);
@@ -457,7 +487,8 @@ void get_dispatcher(uint32_t id,struct libwebsocket *wsi)
 //--- Aux functions for property list management ---
 
 
-int insert(property_list_node_t **ptail, property_t p){
+int insert(property_list_node_t **ptail, property_t p)
+{
     property_list_node_t *pnew;
 
     pnew = malloc(sizeof(property_list_node_t));
@@ -474,7 +505,8 @@ int insert(property_list_node_t **ptail, property_t p){
     return 0;
 }
 
-void free_property_list(property_list_node_t *tail){
+void free_property_list(property_list_node_t *tail)
+{
     if(tail == NULL)
         return;
     free_property_list(tail->p_prev);
